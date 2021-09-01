@@ -1,0 +1,20 @@
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--l-header-height);
+  background-color: var(--c-main);
+  z-index: 1000;
+
+  h1 {
+    color: var(--c-light);
+  }
+}
+
+main::before {
+  content: "";
+  height: var(--l-header-height);
+  display: block;
+}

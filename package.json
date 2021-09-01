@@ -1,0 +1,22 @@
+{
+  "name": "page-demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "playground",
+  "scripts": {
+    "start": "run-p watch:* server",
+    "server": "browser-sync start --server dist --files dist",
+    "build": "run-p build:*",
+    "watch:ts": "tsc -w",
+    "watch:sass": "sass -w src/scss/main.scss dist/css/main.css",
+    "build:ts": "tsc",
+    "build:sass": "sass"
+  },
+  "author": "ken7253 <ken7253@gmail.com> (https://dairoku-studio.com)",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.38.2",
+    "typescript": "^4.4.2"
+  }
+}

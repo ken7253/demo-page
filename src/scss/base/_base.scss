@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-feature-settings: "palt";
+  letter-spacing: .075em;
+}
+
+body {
+  background-color: var(--c-light);
+  color: var(--c-pureBlack);
+}
