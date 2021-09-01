@@ -10,7 +10,7 @@
     "watch:ts": "tsc -w",
     "watch:sass": "sass -w src/scss/main.scss dist/css/main.css",
     "build:ts": "tsc",
-    "build:sass": "sass"
+    "build:sass": "sass src/scss/main.scss dist/css/main.css"
   },
   "author": "ken7253 <ken7253@gmail.com> (https://dairoku-studio.com)",
   "devDependencies": {
