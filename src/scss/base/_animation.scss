@@ -1,18 +1,29 @@
 @use "./var";
 @use "./keyframes";
 
-@mixin animeSync($keyframeName) {
-  animation: $keyframeName 3s ease-in-out 0s alternate;
+@mixin animeSync($keyframeName, $time: 3s) {
+  animation: $keyframeName $time ease-in-out 0s alternate;
   animation-iteration-count: infinite;
 }
 
 .anime {
   &-typography01 {
+    font-family: var(--f-variable);
     .a-layer-01 {
-      font-family: var(--f-variable);
       font-size: 2rem;
       font-variation-settings: "wght" 100, "slnt" 0;
       @include animeSync(layer01);
+    }
+    .a-layer-02 {
+      @include animeSync(layer02);
+    }
+    .a-layer-03 {
+      @include animeSync(layer03);
+    }
+    .a-layer-04 {
+      line-height: 2;
+      font-size: 2.5rem;
+      @include animeSync(layer04, 6s);
     }
   }
 }

@@ -22,32 +22,44 @@
   }
 }
 
-@keyframes layer02 {
-  0% {
-    @include start-style();
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// @keyframes layer02 {
+//   0% {
+//     @include start-style();
+//     text-shadow: 0 0 0 var(--c-main);
+//   }
+//   25% {
+//     text-shadow: 0 10px 0 var(--c-main);
+//   }
+//   50% {
+//     text-shadow: 0 10px 0 var(--c-main);
+//   }
+//   100% {
+//     text-shadow: 0 0 var(--c-main);
+//   }
+// }
 
-@keyframes layer03 {
-  0% {
-    @include start-style();
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// @keyframes layer03 {
+//   0% {
+//     @include start-style();
+//     text-shadow: 0 0 0 var(--c-main);
+//   }
+//   25% {
+//     text-shadow: 0 1rem 0 var(--c-main);
+//   }
+//   50% {
+//     text-shadow: 0 1rem 0 var(--c-main);
+//   }
+//   100% {
+//     text-shadow: 0 0 var(--c-main);
+//   }
+// }
 
 @keyframes layer04 {
   0% {
     @include start-style();
-    opacity: 0;
+    letter-spacing: .05em;
   }
   100% {
-    opacity: 0;
+    letter-spacing: .1em;
   }
 }
