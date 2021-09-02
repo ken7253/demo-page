@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP:wght@100;400;500;900&display=swap");
 :root {
   --c-main: #6088d1;
   --c-dark: #333;
@@ -8,6 +9,9 @@
   --c-lighter: #ddd;
   --c-lightest: #eee;
   --c-pureWhite: #fff;
+  --f-variable: "Inter", sans-serif;
+  --f-jp: "Noto Sans JP", "",sans-serif;
+  --f-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --l-header-height: 60px;
 }
 
@@ -35,6 +39,7 @@ body.dark-mode {
   scroll-behavior: smooth;
   font-feature-settings: "palt";
   letter-spacing: 0.075em;
+  font-family: var(--f-variable), var(--f-jp), var(--f-fallback);
 }
 
 body {
