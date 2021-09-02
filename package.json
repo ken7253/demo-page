@@ -5,7 +5,7 @@
   "description": "playground",
   "scripts": {
     "start": "run-p watch:* server",
-    "server": "browser-sync start --server dist --files dist",
+    "server": "browser-sync start --server docs --files docs",
     "build": "run-p build:*",
     "watch:ts": "tsc -w",
     "watch:sass": "sass -w src/scss/main.scss docs/css/main.css",
