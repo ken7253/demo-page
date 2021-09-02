@@ -51,13 +51,3 @@
     opacity: 0;
   }
 }
-
-@keyframes layer05 {
-  0% {
-    @include start-style();
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
