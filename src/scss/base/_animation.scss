@@ -1,2 +1,43 @@
 @use "./var";
+@use "./keyframes";
 
+@mixin animeSync($keyframeName) {
+  animation: $keyframeName 3s ease-in-out 0s alternate;
+  animation-iteration-count: infinite;
+}
+
+.anime {
+  &-typography01 {
+    span {
+      display: block;
+    }
+    .a-layer-01 {
+      font-family: var(--f-variable);
+      font-size: 2rem;
+      font-variation-settings: "wght" 100, "slnt" 0;
+      @include animeSync(layer01);
+    }
+    .a-layer-02 {
+      @include animeSync(layer02);
+    }
+    .a-layer-03 {
+      @include animeSync(layer03);
+    }
+    .a-layer-04 {
+      @include animeSync(layer04);
+    }
+    .a-layer-05 {
+      @include animeSync(layer05);
+    }
+  }
+}
+
+// 視差効果を減らす設定をしている人にアニメーションが表示されないように設定
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none;
+    animation: none;
+  }
+}

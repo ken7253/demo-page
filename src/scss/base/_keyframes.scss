@@ -1,0 +1,63 @@
+@use "./var";
+
+@keyframes typography01 {
+  0% {
+    
+  }
+
+}
+
+@mixin start-style() {
+}
+
+@keyframes layer01 {
+  0% {
+    font-variation-settings: "wght" 100, "slnt" 0;
+  }
+  50% {
+    font-variation-settings: "wght" 600, "slnt" -10;
+  }
+  100% {
+    font-variation-settings: "wght" 100, "slnt" 0;
+  }
+}
+
+@keyframes layer02 {
+  0% {
+    @include start-style();
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes layer03 {
+  0% {
+    @include start-style();
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes layer04 {
+  0% {
+    @include start-style();
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes layer05 {
+  0% {
+    @include start-style();
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

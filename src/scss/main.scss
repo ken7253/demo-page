@@ -1,10 +1,11 @@
 @use "./base/var" as var;
-@use "./base/animation" as anime;
+@use "./base/animation";
 @use "./base/base";
 
 @use "./sections/section01";
 @use "./sections/section02";
 @use "./sections/section03";
+@use "./sections/section04";
 
 @use "./common/defaultExport";
 
@@ -15,13 +16,13 @@ section {
   align-items: center;
 }
 
-section h2 {
+section:not(.sec-04) h2 {
   opacity: 0;
   transform: translateY(100px);
   will-change: opacity transform;
 }
 
-section h2.show {
+section:not(.sec-04) h2.show {
   transition: opacity 500ms ease-in-out, transform 700ms ease-in-out;
   opacity: 1;
   transform: translateY(0);

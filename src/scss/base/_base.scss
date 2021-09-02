@@ -1,5 +1,10 @@
 @use './var';
 
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/font/Inter-VariableFont_slnt\,wght.ttf");
+}
+
 *,
 *::before,
 *::after {
@@ -12,7 +17,6 @@
   scroll-behavior: smooth;
   font-feature-settings: "palt";
   letter-spacing: .075em;
-  font-family: var(--f-variable), var(--f-jp), var(--f-fallback);
 }
 
 body {
