@@ -14,18 +14,16 @@
   --l-header-height: 60px;
 }
 
-@media (prefers-color-scheme: dark){
-  body.dark-mode {
-    --c-main: #6088d1;
-  
-    --c-dark: #ccc;
-    --c-darker: #ddd;
-    --c-darkest: #eee;
-    --c-pureBlack: #fff;
-  
-    --c-light: #333;
-    --c-lighter: #222;
-    --c-lightest: #111;
-    --c-pureWhite: #000;
-  }
+body.dark-mode {
+  --c-main: #6088d1;
+
+  --c-dark: #ccc;
+  --c-darker: #ddd;
+  --c-darkest: #eee;
+  --c-pureBlack: #fff;
+
+  --c-light: #333;
+  --c-lighter: #222;
+  --c-lightest: #111;
+  --c-pureWhite: #000;
 }
