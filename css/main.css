@@ -38,43 +38,18 @@ body.dark-mode {
     font-variation-settings: "wght" 100, "slnt" 0;
   }
 }
-@keyframes layer02 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes layer03 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes layer04 {
   0% {
-    opacity: 0;
+    letter-spacing: 0.05em;
   }
   100% {
-    opacity: 0;
+    letter-spacing: 0.1em;
   }
 }
-@keyframes layer05 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.anime-typography01 span {
-  display: block;
+.anime-typography01 {
+  font-family: var(--f-variable);
 }
 .anime-typography01 .a-layer-01 {
-  font-family: var(--f-variable);
   font-size: 2rem;
   font-variation-settings: "wght" 100, "slnt" 0;
   animation: layer01 3s ease-in-out 0s alternate;
@@ -89,11 +64,9 @@ body.dark-mode {
   animation-iteration-count: infinite;
 }
 .anime-typography01 .a-layer-04 {
-  animation: layer04 3s ease-in-out 0s alternate;
-  animation-iteration-count: infinite;
-}
-.anime-typography01 .a-layer-05 {
-  animation: layer05 3s ease-in-out 0s alternate;
+  line-height: 2;
+  font-size: 2.5rem;
+  animation: layer04 6s ease-in-out 0s alternate;
   animation-iteration-count: infinite;
 }
 
@@ -155,6 +128,7 @@ body {
   height: 100vh;
   max-width: 1200px;
   overflow: visible;
+  text-align: center;
 }
 
 header {
